@@ -15,7 +15,7 @@ print("'donephy' ---> Physical Activity")
 def musiconloop(file, stopper):
     mixer.init()
     mixer.music.load(file)
-    mixer.music.play(50)#made the loop and play the audio 50 times
+    mixer.music.play(60)#made the loop and play the audio 60 times
     while True:
         input_of_user = input()
         if input_of_user == stopper:
@@ -31,9 +31,9 @@ if __name__ == '__main__':
     init_water = time()
     init_eyes = time()
     init_exercise = time()
-    watersecs = 30*60
-    exsecs = 45*60
-    eyessecs = 120*60
+    watersecs = 5
+    exsecs = 25
+    eyessecs = 15
 
     while True:
         if time() - init_water > watersecs:
